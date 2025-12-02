@@ -1,0 +1,63 @@
+[
+  {
+    "_id": "sample1",
+    "name": "Sarah Johnson",
+    "role": "Frontend",
+    "techStack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "experience": 4,
+    "createdAt": "2024-01-15T10:00:00.000Z",
+    "updatedAt": "2024-01-15T10:00:00.000Z"
+  },
+  {
+    "_id": "sample2",
+    "name": "Mike Chen",
+    "role": "Backend",
+    "techStack": [
+      "Node.js",
+      "Express",
+      "PostgreSQL"
+    ],
+    "experience": 5,
+    "createdAt": "2024-01-15T11:00:00.000Z",
+    "updatedAt": "2024-01-15T11:00:00.000Z"
+  },
+  {
+    "_id": "sample3",
+    "name": "Alex Rodriguez",
+    "role": "Full-Stack",
+    "techStack": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "AWS"
+    ],
+    "experience": 6,
+    "createdAt": "2024-01-15T12:00:00.000Z",
+    "updatedAt": "2024-01-15T12:00:00.000Z"
+  },
+  {
+    "_id": "miot39gwgncplb1q6j",
+    "name": "Vishal Mourya",
+    "role": "Full-Stack",
+    "techStack": [
+      "Nodejs",
+      "Mongodb",
+      "react",
+      "html",
+      "css",
+      "js",
+      "express js",
+      "nextjs",
+      "typescript",
+      "git",
+      "GitHub."
+    ],
+    "experience": 0,
+    "createdAt": "2025-12-02T16:42:21.492Z",
+    "updatedAt": "2025-12-02T16:42:21.492Z"
+  }
+]

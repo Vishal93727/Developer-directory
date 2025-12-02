@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen text-slate-700;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-slate-800;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60 rounded-full;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-200;
+  }
+}
+
+@layer components {
+
+  
+  .card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md
+           transition-all duration-300 p-6 border border-slate-100;
+  }
+
+  .card-hover {
+    @apply hover:scale-[1.01] cursor-pointer;
+  }
+
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white
+           px-6 py-2.5 rounded-lg font-medium
+           hover:shadow-lg hover:scale-105
+           transition-all duration-200
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+  }
+
+  
+  .btn-outline {
+    @apply border border-primary text-primary px-6 py-2.5 rounded-lg
+           hover:bg-primary hover:text-white transition-all duration-200;
+  }
+
+
+  .input-field {
+    @apply w-full px-4 py-2.5 border border-slate-300 rounded-lg
+           focus:ring-2 focus:ring-primary focus:border-transparent
+           transition-all duration-200 outline-none bg-white;
+  }
+
+
+  .badge {
+    @apply inline-block px-3 py-1 bg-gradient-to-r from-indigo-50 to-purple-50
+           text-primary text-sm rounded-full font-medium;
+  }
+
+  
+  .nav-link {
+    @apply text-slate-600 font-medium hover:text-primary transition-all duration-200;
+  }
+
+  
+  .container-custom {
+    @apply mx-auto px-4 lg:px-8 max-w-7xl;
+  }
+}
+
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .grid-center {
+    @apply grid place-items-center;
+  }
+
+  .section {
+    @apply py-10 lg:py-16;
+  }
+
+  .title {
+    @apply text-3xl lg:text-4xl font-bold text-slate-800 mb-4;
+  }
+
+  .subtitle {
+    @apply text-lg text-slate-600 mb-6;
+  }
+}
