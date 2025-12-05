@@ -21,13 +21,33 @@ const developerSchema = new mongoose.Schema({
     required: [true, 'Experience is required'],
     min: [0, 'Experience cannot be negative'],
     max: [50, 'Experience seems too high']
+  },
+  about: {
+    type: String,
+    default: '',
+    maxlength: [1000, 'About section cannot exceed 1000 characters']
+  },
+  photoUrl: {
+    type: String,
+    default: ''
+  },
+  joiningDate: {
+    type: Date,
+    default: Date.now
+  },
+  createdBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
   }
 }, {
   timestamps: true
 });
 
-// Index for faster searches
+// Indexes for better query performance
 developerSchema.index({ role: 1 });
 developerSchema.index({ techStack: 1 });
+developerSchema.index({ experience: 1 });
+developerSchema.index({ name: 'text', about: 'text' });
 
 module.exports = mongoose.model('Developer', developerSchema);
