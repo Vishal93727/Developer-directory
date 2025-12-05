@@ -13,9 +13,15 @@ const PORT = process.env.PORT || 5000;
 // Connect to database
 connectDB();
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*',
-  credentials: true
+  origin: [
+    "https://developer-dnum.onrender.com/api",
+    "https://developer-directory-rrgc.onrender.com"
+  ],
+  credentials: true,
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization"]
 }));
+
 
 
 app.use(express.json());
