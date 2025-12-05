@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 app.use(cors({
   origin: [
-    "https://developer-dnum.onrender.com/api",
+    "https://developer-dnum.onrender.com",
     "https://developer-directory-rrgc.onrender.com"
   ],
   credentials: true,
